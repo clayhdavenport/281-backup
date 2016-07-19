@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/link-button.css">
+    <link rel="stylesheet" href="stylesheets/forms.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="vcard">
+        <section class="bio cf">
+            <img src="images/headshot.png" width="80" height="80">
+            <div class="detail">
+                <h2>Books R Us!</h2>
+                <p class="description">Fill this form to add title.</p>
+            </div>
+            <nav>
+                <span class="link_button">
+                <a href="/index.html">&nbsp;Home</a>
+                </span>
+                &nbsp;
+                <span class="link_button">
+                <a href="/confirm-add.html">Add Book</a>
+                </span>
+            </nav>
+        </section>
+        <section class="social cf">
+            <main>
+                <form class="book_form" action="http://localhost:3000/add-book" method="Post">
+                    <p>
+                        Title:
+                        <input type="text" name="title">
+                    </p>
+                    <p>
+                        Author:
+                        <input type="text" name="author">
+                    </p>
+                    <p>
+                        Category:
+                        <input type="text" name="category">
+                    </p>
+                    <input type="submit" value="Submit Book" id = "submitBttn">
+                </form>
+            </main>
+        </section>
+    </div>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="javascripts/books-app.js"></script>
+</body>
+
+</html>

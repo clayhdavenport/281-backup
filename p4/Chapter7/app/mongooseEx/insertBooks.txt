@@ -1,0 +1,17 @@
+db.books.insert({
+  title:'SICP',
+  author:'Abelson',
+  category:'C.S.'
+  })
+
+db.books.insert({
+  title:'Three Musketeers',
+  author:'Dumas',
+  category:'Humanities'
+  })
+
+db.books.insert({
+  title:'Learning Web App Development',
+  author:'Purewal',
+  category:'WebDev'
+  })

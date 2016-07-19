@@ -1,0 +1,9 @@
+---
+applications:
+- name: clayd-todosApp
+  memory: 128M
+  buildpack: nodejs_buildpack
+  command: node todos-server.js
+  instances: 1
+  services:
+  - clayd-mLab

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>A Simple App</title>
+
+    <link href='stylesheets/style.css' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <header>
+      <h1>2do List</h1>
+      <p>A simple app that allows a user to input 2do list items.</p>
+    </header>
+
+    <main>
+      <section class='comment-input'>
+        <form class="todo_form" action="/add-todo" method="Post">
+        <p>Add an item to the list:</p>
+        <p>
+        <input type="text" name="content"><button type="submit">+</button>
+        </p>
+      </form>
+      </section>
+
+      <section class='comments'>
+        <!--Bolded 2do List in CSS versus the HTML-->
+        <p>2do List</p>
+
+      </section>
+    </main>
+
+    <footer>
+      <p>This work is for CIT 281 Project 5</p>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="javascripts/todos-app.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,9 @@
+/* CSS to style Form on add-book.html */
+.book_form input {
+    background-color: #aaaaaa;
+    border: 1px solid #aaaaaa;
+}
+.book_form {
+    font-family: verdana;
+};
+
