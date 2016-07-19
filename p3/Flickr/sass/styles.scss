@@ -1,0 +1,107 @@
+// Importing Files
+@import "compass";
+@import "normalize";
+
+//Variables
+$base: #74b08e;
+$dark: darken($base, 10%);
+$width: 765px;
+$space: $width / 50; // = 20px
+$img: image-width("headshot.png") + (($space / 4) * 2);
+
+//Selector Inheritance
+.float-left {
+    float: left;
+}
+.box-sizing {
+    @include box-sizing(border-box);
+}
+
+//Styles
+html { 
+    height: 100%;
+    background-color: $base;
+}
+
+//vCard
+.vcard {
+    width: $width;
+    margin: 50px auto;
+    background-color: darken($base, 5%);
+    border: 1px solid $dark;
+    @include border-radius(3px);
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            list-style: none;
+        }
+    }   
+}
+
+//Bio Section
+.bio {
+    border-bottom: 1px solid $dark;
+    padding: $space;
+    @extend .box-sizing;
+    img {
+        @extend .float-left;
+        display: block;
+        border: ($space / 4) solid #ffffff;
+    }
+    .detail {
+        @extend .float-left;
+        @extend .box-sizing;
+        color: darken($base, 50%);
+        margin: {
+            left: $space;
+            bottom: $space / 2;
+        }
+        width: $width - (($space * 3) + $img);
+        li {
+            &:before {
+                width: $space;
+                height: $space;
+                margin-right: $space;
+                font-family: "ModernPictogramsNormal";
+            }
+            &.name:before {
+                    content: "f";
+            }
+            &.email:before {
+                    content: "m";
+            }
+            &.phone:before {
+                    content: "N"; 
+            }
+        }
+    }
+}
+
+//Social Section
+.social {
+    background-color: $dark;
+    width: 100%;
+    padding: $space;
+    @extend .box-sizing;
+    ul {
+        text-align: center;
+        li {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            a {
+                text-decoration: none;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+// font-face
+@include font-face("ModernPictogramsNormal", font-files("modernpics-webfont.ttf","modernpics-webfont.otf", "modernpics-webfont.woff", "modernpics-webfont.eot", "modernpics-webfont.eot?#iefix", "modernpics-webfont.svg#ModernPictogramsNormal"));

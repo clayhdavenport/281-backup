@@ -1,0 +1,23 @@
+// style.scss (// don't appear in the outputed CSS, whereas /* */ do.)
+ 
+@import "awesome-const";
+
+body {
+    font-family: $body-font;
+    width: $width - 2 * 10px;
+    padding:10px;
+}
+ 
+h1,h2,h3,h4 {
+    font-family: $header-font;
+}
+ 
+h1 {
+    color:$brand-color;
+}
+ 
+section {
+    h1 {
+        color:$accent-color;
+    }
+}

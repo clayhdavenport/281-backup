@@ -1,0 +1,15 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  width: 940px;
+  padding: 10px; }
+
+h1, h2, h3, h4 {
+  font-family: "Segoe UI", "Myriad Pro", "Helvetica Neue", Arial, sans-serif; }
+
+h1 {
+  color: red; }
+
+section h1 {
+  color: #cc0000; }
+
+/*# sourceMappingURL=awesome-style.css.map */

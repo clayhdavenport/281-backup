@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,IAAK;EACD,WAAW,ECDH,mCAAmC;EDE3C,KAAK,EAAE,KAAiB;EACxB,OAAO,EAAC,IAAI;;AAGhB,cAAY;EACR,WAAW,ECND,6DAAoC;;ADSlD,EAAG;EACC,KAAK,ECbK,GAAY;;ADiBtB,UAAG;EACC,KAAK,ECjBE,OAAwB",
+"sources": ["awesome-style.scss","_awesome-const.scss"],
+"names": [],
+"file": "awesome-style.css"
+}
